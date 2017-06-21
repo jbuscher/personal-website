@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "name": "Dawg Flights, Augmented Reality Capstone",
+      "id": "dawgflights",
+      "codeLink": "http://jbuscher.github.io/DawgFightsWebpage/",
+      "projectRole": "Unity 3d Developer, Web Developer, Scrum Master",
+      "date": "June 2016", 
+      "images": ["dawgflights.png", "sampleProject.png", "pikachu.jpg"],
+      "projectSummary": "Summary of project goes here. Caterpie Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metapod Lorem ipsum dolor sit amet, consectetur adipiscing elit. Butterfree Lorem ipsum dolor sit amet, consectetur adipiscing elit. Weedle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Kakuna Lorem ipsum dolor sit amet"
+    },
+    {
+      "name": "Personal Website",
+      "id": "personalwebsite",
+      "codeLink": "#",
+      "projectRole": "WebDeveloper",
+      "date": "June 2017",
+      "images": ["project2.png"],
+      "projectSummary": "Yup, this is referring to this website. I'll hold off on describing this project (since you're already using it) and instead describe why I'm proud enough of this site to list it here. I build this site initially in college with my roommate, when we decided to each make our own personal websites. We were constantly copying and pasting code between eachothers sites when we got something to look or behave exactly how we wanted it to. It was also a total pain every time we wanted to add a project, as it required copying and pasting a big blob of html and trying to enter the right information. I redesigned this website in the summer of 2017, and tried to improve on some of the pre-stated rough spots. I learned some basics of React to build this, to start thinking of webdevelopment in components. This also helped solve the project problem, as now, I can simply add a new project to a json config file, and add a single <Project> tag to my JSX, and voila, a new project is added. With this new project, I've been able to use it as a template when helping some friends build their own personal websites, and its really easy to personalize it for each person, mainly because of the decision to componetize everything."
+    },
+    {
+      "name": "project3",
+      "id": "project3",
+      "codeLink": "www.github.com",
+      "projectRole": "Developer",
+      "date": "April 2014",
+      "images": ["project3.png"],
+      "projectSummary": "Summary of project goes here. Caterpie Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metapod Lorem ipsum dolor sit amet, consectetur adipiscing elit. Butterfree Lorem ipsum dolor sit amet, consectetur adipiscing elit. Weedle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Kakuna Lorem ipsum dolor sit amet"
+    },
+    {
+      "name": "project4",
+      "id": "project4",
+      "codeLink": "www.github.com",
+      "projectRole": "Developer",
+      "date": "April 2014",
+      "images": ["project4.png"],
+      "projectSummary": "Summary of project goes here. Caterpie Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metapod Lorem ipsum dolor sit amet, consectetur adipiscing elit. Butterfree Lorem ipsum dolor sit amet, consectetur adipiscing elit. Weedle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Kakuna Lorem ipsum dolor sit amet"
+    },
+    {
+      "name": "project5",
+      "id": "project5",
+      "codeLink": "www.github.com",
+      "projectRole": "Developer",
+      "date": "April 2014",
+      "images": ["project5.png"],
+      "projectSummary": "Summary of project goes here. Caterpie Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metapod Lorem ipsum dolor sit amet, consectetur adipiscing elit. Butterfree Lorem ipsum dolor sit amet, consectetur adipiscing elit. Weedle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Kakuna Lorem ipsum dolor sit amet"
+    },
+    {
+      "name": "project6",
+      "id": "project6",
+      "codeLink": "www.github.com",
+      "projectRole": "Developer",
+      "date": "April 2014",
+      "images": ["project6.png"],
+      "projectSummary": "Summary of project goes here. Caterpie Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metapod Lorem ipsum dolor sit amet, consectetur adipiscing elit. Butterfree Lorem ipsum dolor sit amet, consectetur adipiscing elit. Weedle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Kakuna Lorem ipsum dolor sit amet"
+    }
+  ]
+}

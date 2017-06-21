@@ -1,0 +1,97 @@
+/*
+Shared styles
+*/
+
+#projects, #about, #contact {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.cleared {
+	clear: both;
+}
+
+.jumbotron {
+  height: 100vh;
+	padding-top: 110px;
+  margin-bottom: 0px;
+  background-image: url('/images/bg.jpg');
+  background-position: 50% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: black 0.4em 0.4em 0.4em;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about {
+	background-color: #009688;
+	color: #ffffff;
+}
+
+#about h1 {
+	text-align: center;
+}
+
+#about img {
+  border: white 5px solid;
+}
+
+#projects {
+	background-color: #474e5d;
+	color: #ffffff;
+}
+
+#projects img, .modal-body img {
+	width: 300px;
+	height: 300px;
+}
+
+#contact {
+	background-color: #ECECEA;
+  padding-bottom: 40px;
+}
+
+#contact > div{
+	text-align: left;
+}
+
+/*
+Form styles
+*/
+fieldset {
+	text-align: left;
+}
+
+/*
+Modal styles
+*/
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+}
+
+#projects img:hover {
+	opacity: .5;
+}
+
+.close-modal {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+  z-index: 1;
+}
