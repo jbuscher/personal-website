@@ -17,16 +17,14 @@ import ProjectData from './data/projects.json';
 class App extends Component {
   render() {
     return (
-      <div data-spy="scroll" data-target=".navbar">
-        <NavBar />
-        <div id="frame">
+        <div id="frame" data-spy="spyscroll" data-target=".navbar">
           <HeaderSection />
+          <NavBar />
           <AboutSection />
           <ProjectThumbnailSection projects={ProjectData.projects}/>
           <ContactSection />
           <ProjectModalSection projects={ProjectData.projects}/>
         </div>
-      </div>
     );
   }
 }

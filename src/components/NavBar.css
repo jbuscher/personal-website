@@ -1,6 +1,10 @@
 .navbar {
 	margin-bottom: 0px;
 	padding: 0px;
+	z-index: 2;
+	border-radius: 0;
+	border:none;
+	background-color: #3f51b5;
 }
 
 .img-nav {
@@ -12,65 +16,11 @@
 	width: 50%
 }
 
-/*
-	Makes a animating navigation bar, that shrinks when scrolling down
-*/
-.affix li{
-	padding:0px;
-	font-size: 14px;
-
-	-webkit-transition:padding 0.2s linear;
-	-moz-transition:padding 0.2s linear;  
-	-o-transition:padding 0.2s linear;         
-	transition:padding 0.2s linear;  
-
-	-webkit-transition:font-size 0.1s linear;
-	-moz-transition:font-size 0.1s linear;  
-	-o-transition:font-size 0.1s linear;         
-	transition:font-size 0.1s linear;
+.affix {
+    top: 0;
+    width: 100%;
 }
 
-.affix-top li{
-	padding-top:15px;
-	padding-bottom:15px;
-	font-size: 20px;
-
-	-webkit-transition:padding 0.2s linear;
-	-moz-transition:padding 0.2s linear;  
-	-o-transition:padding 0.2s linear;         
-	transition:padding 0.2s linear; 
-
-	-webkit-transition:font-size 0.1s linear;
-	-moz-transition:font-size 0.1s linear;  
-	-o-transition:font-size 0.1s linear;         
-	transition:font-size 0.1s linear; 
-}
-
-.affix button{
-	margin-top:10px;
-	margin-bottom:10px;
-
-	-webkit-transition:margin 0.2s linear;
-	-moz-transition:margin 0.2s linear;  
-	-o-transition:margin 0.2s linear;         
-	transition:margin 0.2s linear;  
-}
-
-.affix-top button{
-	margin-top:20px;
-	margin-bottom:20px;
-
-	-webkit-transition:margin 0.2s linear;
-	-moz-transition:margin 0.2s linear;  
-	-o-transition:margin 0.2s linear;         
-	transition:margin 0.2s linear; 
-}    
-
-
-.affix img {
-	width: 17%;
-}
-
-.affix-top img {
-	width: 40%;
+.affix + .container-fluid {
+    padding-top: 75px;
 }

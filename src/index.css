@@ -1,9 +1,8 @@
 /*
 Shared styles
 */
-
-#projects, #about, #contact {
-	padding-top: 15px;
+.container-fluid {
+  padding-top: 25px;
 	padding-bottom: 15px;
 	padding-left: 15%;
 	padding-right: 15%;
@@ -14,24 +13,23 @@ Shared styles
 }
 
 .jumbotron {
-  height: 100vh;
-	padding-top: 110px;
+  height: 30vh;
   margin-bottom: 0px;
-  background-image: url('/images/bg.jpg');
+  background-color: #3f51b5;
   background-position: 50% 25%;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
   text-shadow: black 0.4em 0.4em 0.4em;
 
-  /* Create the parallax scrolling effect */
+  /* Create the parallax scrolling effect 
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 #about {
-	background-color: #009688;
+	background-color: #222222;
 	color: #ffffff;
 }
 
