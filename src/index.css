@@ -1,3 +1,7 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 /*
 Shared styles
 */
@@ -15,12 +19,11 @@ Shared styles
 .jumbotron {
   height: 30vh;
   margin-bottom: 0px;
-  background-color: #3f51b5;
+  background-color: #03a9f4;
   background-position: 50% 25%;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  text-shadow: black 0.4em 0.4em 0.4em;
 
   /* Create the parallax scrolling effect 
   background-attachment: fixed;
