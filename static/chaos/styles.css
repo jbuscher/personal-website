@@ -12,11 +12,10 @@
   height: 110px;
 }
 
-.App-header {
+.jumbotron {
   background-color: #222;
-  height: 140px;
-  padding: 20px;
   color: white;
+  padding: 0px;
 }
 
 .App-intro {
