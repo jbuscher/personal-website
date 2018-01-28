@@ -1,3 +1,4 @@
+"use strict";
 var WIDTH = 500;
 var HEIGHT = 500;
 var jumpDistance = .5;
@@ -7,12 +8,16 @@ var timer;
 
 var currX;
 var currY;
-var prevVertex = -1;
-var prevprevVertex = -1;
+var prevVertex;
+var prevprevVertex;
 var vertexOptions = [];
 var rule;
 
 var running = false;
+
+/*
+Initalize on page load, set click and change handlers
+*/
 window.onload = function() {
   initValues();
   canvas = document.getElementById("mainBoard");
@@ -44,9 +49,9 @@ function drawfast() {
     draw();
   }
 }
+
 function draw() {
   ctx.fillRect(currX, currY, 1, 1);
-
   var vertex;
   if(rule == 1) {
     vertex = rule1();
@@ -56,6 +61,8 @@ function draw() {
     vertex = rule3();
   } else if (rule == 4) {
     vertex = rule4();
+  } else if (rule == 5) {
+    vertex = rule5();
   }
   prevprevVertex = prevVertex;
   prevVertex = vertex;
@@ -64,7 +71,9 @@ function draw() {
   currY = jumpY(currY, vertex, jumpDistance);
 }
 
-
+/*
+Rule 1: Check the previous vertex, if its the same as the previously chosen vertex, try choosing again.
+*/
 function rule1() {
   var vertex =  Math.floor(Math.random() * vertexOptions.length); //choose a random vertex to go towards
   while (vertex == prevVertex) { //can't choose the same vertex twice
@@ -159,6 +168,11 @@ function changeVerticiesHandler() {
   changeVerticies(vCount);
 }
 
+function getSelectedPolygonVertexCount() {
+  var polygonSelector = document.getElementById("polygons");
+  var vCount = polygonSelector.options[polygonSelector.selectedIndex].value;
+}
+
 function changeVerticies(sides) {
   var r = WIDTH/2;
   var initialRotation = 3 * Math.PI / 2;
@@ -183,4 +197,10 @@ function changeSizeHandler() {
   canvasDom.height = HEIGHT;
   canvasDom.width = WIDTH;
   clearCanvas();
+
+  // Redraw verticies
+  var polygonSelector = document.getElementById("polygons");
+  var vCount = polygonSelector.options[polygonSelector.selectedIndex].value;
+  vertexOptions = [];
+  changeVerticies(vCount);
 }
